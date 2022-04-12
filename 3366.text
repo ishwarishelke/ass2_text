@@ -1,0 +1,72 @@
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ git --version
+git version 2.35.1.windows.2
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ git help config
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ mkdir test
+mkdir: cannot create directory ‘test’: File exists
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ git config help --
+error: key does not contain a section: help
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ git config --help
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ mkdir test
+mkdir: cannot create directory ‘test’: File exists
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ mkdir web
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~ (main)
+$ cd web
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (main)
+$ git init
+Initialized empty Git repository in C:/Users/bvcoew/web/.git/
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        one.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git add one.html
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git commit -m "comitting a html file"
+[master (root-commit) 2cc38f0] comitting a html file
+ 1 file changed, 117 insertions(+)
+ create mode 100644 one.html
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git config --global user.username ishwarishelke-github
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git remote add origin https://github.com/ishwarishelke/one_html.git
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1002 bytes | 1002.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ishwarishelke/one_html.git
+ * [new branch]      master -> master
+
+bvcoew@DESKTOP-12BJ20O MINGW64 ~/web (master)
+$
